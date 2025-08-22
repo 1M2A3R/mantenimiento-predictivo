@@ -108,24 +108,7 @@ st.sidebar.download_button(
 )
 # ===== AGREGA ESTO AL FINAL de tu app.py existente =====
 
-@app.route('/simulate', methods=['POST'])
-def api_simulate():
-    """Endpoint para que el bot de Telegram llame a tu simulación"""
-    try:
-        data = request.json
-        # Aquí usas tu lógica existente de simulación
-        # Esto es un ejemplo - adapta con tu lógica real
-        
-        resultado = {
-            'condicion': 'Óptima',
-            'vida_util': '85%',
-            'recomendacion': 'Mantenimiento preventivo en 30 días',
-            'usuario': data.get('telegram_user', 'anonimo')
-        }
-        
-        return jsonify(resultado), 200
-        
-    except Exception as e:
+except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 # NO modifiques el resto de tu app.py
