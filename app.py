@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -106,9 +105,3 @@ st.sidebar.download_button(
     file_name="datos_motor.csv",
     mime="text/csv"
 )
-# ===== AGREGA ESTO AL FINAL de tu app.py existente =====
-
-        return jsonify({'error': str(e)}), 500
-
-# NO modifiques el resto de tu app.py
-# Mantén tu if __name__ == "__main__" actual
