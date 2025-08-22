@@ -108,7 +108,6 @@ st.sidebar.download_button(
 )
 # ===== AGREGA ESTO AL FINAL de tu app.py existente =====
 
-except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 # NO modifiques el resto de tu app.py
