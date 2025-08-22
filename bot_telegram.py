@@ -66,3 +66,4 @@ class MaintenanceBot:
 if __name__ == "__main__":
     bot = MaintenanceBot()
     bot.run()
+    python bot_telegram.py
