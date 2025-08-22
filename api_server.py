@@ -48,3 +48,4 @@ def run_api_server():
 # Ejecutar solo si se llama directamente
 if __name__ == '__main__':
     run_api_server()
+    python api_server.py
