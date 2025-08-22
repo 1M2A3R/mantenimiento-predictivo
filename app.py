@@ -105,3 +105,10 @@ st.sidebar.download_button(
     file_name="datos_motor.csv",
     mime="text/csv"
 )
+# ---- Botón de descarga ----
+st.sidebar.download_button(
+    "📥 Descargar Datos",
+    datos.to_csv(),
+    file_name="datos_motor.csv",
+    mime="text/csv"
+)
